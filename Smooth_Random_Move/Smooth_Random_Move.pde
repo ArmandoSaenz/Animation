@@ -3,10 +3,9 @@ float vphi = 0;
 float x[] = new float[100],y[] = new float[100];
 float t=0;
 int c=0;
-int d = 0;
 void setup()
 {
-  size(300,300,P2D);
+  fullScreen(P2D);
   for(int i = 0; i<x.length;i++)
   {
     x[i] = 0;
@@ -42,5 +41,6 @@ void draw()
       y[i-1] = y[i];
     }
   }
-  saveFrame("img" + str(d)+"0.jpg");
+ println(height);
+ println(width);
 }
